@@ -6,14 +6,7 @@
     "type": "git",
     "url": "https://github.com/eriknyk/rforms.git"
   },
-
-  "scripts": {
-    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
-    "test": "babel-node testrunner",
-    "examples": "webpack-dev-server --config examples/webpack.config.js --content-base examples",
-    "prepublish": "babel ./src/ -d ./lib/"
-  },
-  "author": "Christian Alfoni",
+  "author": "Erik Amaru Ortiz",
   "license": "MIT",
   "keywords": [
     "react",
@@ -22,6 +15,13 @@
     "validation",
     "react-component"
   ],
+  "scripts": {
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
+    "test": "babel-node testrunner",
+    "examples": "webpack-dev-server --config examples/webpack.config.js --content-base examples",
+    "prepublish": "babel ./src/ -d ./lib/"
+  },
+  "main": "lib/index.js",
   "dependencies": {
     "form-data-to-object": "^0.2.0"
   },
@@ -44,5 +44,12 @@
   },
   "peerDependencies": {
     "react": "15.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/eriknyk/rforms/issues"
+  },
+  "homepage": "https://github.com/eriknyk/rforms#readme",
+  "directories": {
+    "example": "examples"
   }
 }

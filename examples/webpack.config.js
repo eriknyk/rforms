@@ -8,7 +8,7 @@ module.exports = {
     'webpack-hot-middleware/client',
     './index'
   ],
-  
+
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -23,7 +23,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      'rforms': path.join(__dirname, '..')
+      'rforms': path.join(__dirname, '..', 'src')
     }
   },
 
