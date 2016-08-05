@@ -46,7 +46,7 @@ The main concept is that forms, inputs and validation is done very differently a
 
 ## How to use
 
-See [`examples` folder](/examples) for examples. [demo](http://...).
+See [`examples` folder](/examples) for examples. [demo](http://rforms-demo.herokuapp.com/login).
 
 Complete API reference is available [here](/API.md).
 
