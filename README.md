@@ -1,5 +1,5 @@
-R-Forms  [![GitHub release](https://img.shields.io/github/release/christianalfoni/formsy-react.svg)](https://github.com/christianalfoni/formsy-react/releases) [![Build Status](https://travis-ci.org/christianalfoni/formsy-react.svg?branch=master)](https://travis-ci.org/christianalfoni/formsy-react)
-============
+R-Forms
+=======
 
 A form input builder and validator for React JS ***(Inspired/Based on formsy-react)***
 
@@ -139,7 +139,7 @@ class MyInput extends Component {
       <div className={this.classNameGroup}>
         <label htmlFor={this.props.name}>{this.props.title}</label>
         <input
-          className={this.className} 
+          className={this.className}
           type={this.props.type || 'text'}
           name={this.props.name}
           onChange={this.handleChange}
@@ -159,8 +159,6 @@ export default RFInput(MyInput);
 The form element component is what gives the form validation functionality to whatever you want to put inside this wrapper. You do not have to use traditional inputs, it can be anything you want and the value of the form element can also be anything you want. As you can see it is very flexible, you just have a small API to help you identify the state of the component and set its value.
 
 ## Related projects
-
-- [formsy-react](https://github.com/christianalfoni/formsy-react) - formsy-react
 - Send PR for adding your project to this list!
 
 ## Contribute
