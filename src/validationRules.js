@@ -1,3 +1,7 @@
+/**
+ * Extracted from formsy-react https://github.com/christianalfoni
+ */
+
 var isExisty = function (value) {
   return value !== null && value !== undefined;
 };
