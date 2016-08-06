@@ -1,11 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 
-export default function  Decorator (ComposedComponent) {
-  class RField extends Component {
+export default function Decorator (ComposedComponent) {
+  class RFInputHOC extends Component {
     constructor (props) {
       super(props);
 
-      this._id = 'bf-input-' + Math.random().toString().substring(2, 11);
       this.state = {
         _value: this.props.value,
         _isRequired: false,
@@ -110,7 +109,7 @@ export default function  Decorator (ComposedComponent) {
           setValue={this.setValue}
           getValue={this.getValue}
           showError={this.showError}
-          showRequired={this.showRequired} 
+          showRequired={this.showRequired}
           validate={this.validate}
           isValid={this.isValid}
           isPristine={this.isPristine}
@@ -119,23 +118,23 @@ export default function  Decorator (ComposedComponent) {
     }
   }
 
-  RField.propTypes = {
+  RFInputHOC.propTypes = {
     name: PropTypes.string,
     value: PropTypes.string,
     validations: PropTypes.any,
     required: PropTypes.bool
   }
 
-  RField.contextTypes = {
+  RFInputHOC.contextTypes = {
     form: PropTypes.object
   }
 
-  RField.defaultProps = {
+  RFInputHOC.defaultProps = {
     validationError: '',
     validationErrors: {}
   }
 
-  return RField;
+  return RFInputHOC;
 }
 
 /////

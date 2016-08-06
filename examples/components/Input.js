@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames'
-import { RFInput } from 'rforms'; 
+import { RFInputHOC as RFInput } from 'rforms';
 
 class MyInput extends Component {
   constructor (props) {
@@ -14,7 +14,7 @@ class MyInput extends Component {
   // when the value is empty and the required prop is
   // passed to the input. showError() is true when the
   // value typed is invalid
-    
+
   get classNameGroup () {
     return classNames({
       'form-group': true,
@@ -35,7 +35,7 @@ class MyInput extends Component {
   handleChange (event) {
     this.props.setValue(event.currentTarget[this.props.type === 'checkbox' ? 'checked' : 'value']);
   }
-  
+
   render() {
     // An error message is returned ONLY if the component is invalid
     // or the server has returned an error message
@@ -45,7 +45,7 @@ class MyInput extends Component {
       <div className={this.classNameGroup}>
         <label htmlFor={this.props.name}>{this.props.title}</label>
         <input
-          className={this.className} 
+          className={this.className}
           type={this.props.type || 'text'}
           name={this.props.name}
           onChange={this.handleChange}

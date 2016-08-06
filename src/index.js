@@ -1,6 +1,6 @@
 import RForm from './RForm';
 
-export Decorator from './Decorator';
-export RFInput from './Decorator';
+export RFInputDecorator from './RFInputDecorator';
+export RFInputHOC from './RFInputHOC';
 
 export default RForm;
