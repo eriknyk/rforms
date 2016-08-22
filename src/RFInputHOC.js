@@ -45,14 +45,10 @@ export default function Decorator (ComposedComponent) {
       this.context.form.detachInput(this);
     }
 
-    ///////
-
     setValidations (validations, required) {
       // Add validations to the store itself as the props object can not be modified
       this._validations = convertValidationsToObject(validations) || {};
       this._requiredValidations = required === true ? {isDefaultRequiredValue: true} : convertValidationsToObject(required);
-
-      console.log('>>this._validations', this._validations)
     }
 
     getErrorMessage () {
@@ -99,8 +95,6 @@ export default function Decorator (ComposedComponent) {
     }
 
     render() {
-      console.log('==> Component state: ', this.state)
-
       return (
         <ComposedComponent
           {...this.props}
@@ -136,8 +130,6 @@ export default function Decorator (ComposedComponent) {
 
   return RFInputHOC;
 }
-
-/////
 
 var convertValidationsToObject = function (validations) {
 

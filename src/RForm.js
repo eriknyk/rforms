@@ -1,5 +1,5 @@
 /**
- * react-forms-core
+ * react forms "rforms"
  */
 
 import React, { Component, PropTypes } from 'react';
@@ -145,8 +145,6 @@ class RForm extends Component {
 
     var isRequired = Object.keys(component._requiredValidations).length ? !!requiredResults.success.length : false;
     var isValid = !validationResults.failed.length && !(this.props.validationErrors && this.props.validationErrors[component.props.name]);
-
-    console.log('>runValidation > isRequired', isRequired)
 
     return {
       isRequired: isRequired,
