@@ -1,6 +1,6 @@
 {
   "name": "rforms",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A form input builder and validator for React JS (based on formsy-react)",
   "repository": {
     "type": "git",
